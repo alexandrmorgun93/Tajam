@@ -1,0 +1,85 @@
+.feedback {
+  width: 100%;
+  position: relative;
+  padding: rem(65px) 0;
+  .container {
+    display: flex;
+  }
+}
+
+.feedback_title {
+  color: #413d4b;
+  letter-spacing: rem(1.1px);
+  font: 700 rem(22px)/1 "Playfair Display";
+  margin-bottom: rem(35px);
+}
+
+.good_news {
+  width: 50%;
+  position: relative;
+  margin-right: rem(90px);
+}
+
+.feedback_elem {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  input {
+    width: 100%;
+    height: rem(45px);
+    border: rem(1px) solid #e5e5e5;
+    padding: 0 rem(20px);
+    color: #413d4b;
+    opacity: 0.5;
+    margin-bottom: rem(20px);
+    transition: .3s;
+    &:focus {
+      border: rem(1px) solid $blue-color;
+    }
+  }
+  textarea {
+    max-width: 100%;
+    min-width: 100%;
+    max-height: rem(200px);
+    min-height: rem(200px);
+    padding: rem(20px);
+    margin-bottom: rem(20px);
+    opacity: 0.5;
+    border: rem(1px) solid #e5e5e5;
+    transition: .3s;
+    &:focus {
+      border: rem(1px) solid $blue-color;
+    }
+  }
+  .btn {
+    background-color: transparent;
+    cursor: pointer;
+    &:hover {
+      background-color: $blue-color;
+    }
+  }
+}
+
+.happy_client {
+  width: 50%;
+  position: relative;
+  .client_content {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: auto;
+      height: auto;
+      object-fit: cover;
+      margin: 0 rem(40px) rem(40px) 0;
+    }
+  }
+}
+
+
+
+

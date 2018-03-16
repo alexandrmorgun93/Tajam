@@ -1,0 +1,57 @@
+.top_slider {
+  width: 100%;
+  height: rem(670px);
+  overflow: hidden;
+  position: relative;
+  .parallax {
+    position: absolute;
+  }
+  &::before {
+    @include before_fig(100%, 100%, transparent);
+    z-index: 1;
+    background-image: linear-gradient(to right, #09052f 0%, #311d5e 100%);
+    opacity: 0.85;
+  }
+  .container {
+    height: 100%;
+    z-index: 3;
+    .slider_wrap {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.slider_elem {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    display: inline-block;
+    position: relative;
+    margin-bottom: rem(50px);
+    color: #ffffff;
+    letter-spacing: rem(0.32px);
+    font: 900 rem(32px)/1 "Playfair Display";
+    &::before {
+      @include before_fig(rem(50px), rem(1px), $blue-color);
+      bottom: rem(-25px);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  p {
+    line-height: 1.7;
+    max-width: rem(690px);
+    width: 100%;
+    margin-bottom: rem(50px);
+  }
+  a {
+
+  }
+}

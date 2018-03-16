@@ -1,0 +1,55 @@
+.expertize {
+  width: 100%;
+  position: relative;
+  padding: rem(70px) 0;
+}
+
+.expertize_content {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  .expertize_elem {
+    position: relative;
+    width: 33.3%;
+    border-right: rem(1px) solid #ebebeb;
+    border-bottom: rem(1px) solid #ebebeb;
+    display: flex;
+    flex-direction: column;
+    padding: rem(40px) rem(25px);
+    &:nth-child(3), &:nth-child(6) {
+      border-right: 0;
+    }
+    &:nth-child(4), &:nth-child(5), &:nth-child(6) {
+      border-bottom: 0;
+    }
+  }
+}
+
+.elem_head {
+  position: relative;
+  width: 100%;
+  margin-bottom: rem(25px);
+  text-align: center;
+  i {
+    font-size: rem(50px);
+    color: $blue-color;
+    margin-bottom: rem(25px);
+    display: inline-block;
+  }
+  h2 {
+    color: #413d4b;
+    letter-spacing: rem(0.7px);
+    font: 900 rem(14px)/1 "Roboto";
+  }
+}
+
+.elem_text {
+  text-align: center;
+  width: 100%;
+  position: relative;
+  p {
+    color: #333333;
+    line-height: 1.6;
+  }
+}

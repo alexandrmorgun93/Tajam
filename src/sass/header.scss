@@ -1,0 +1,57 @@
+.main_head {
+  width: 100%;
+  height: rem(80px);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.logo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  .logo_img {
+    max-width: rem(45px);
+    width: 100%;
+    height: rem(50px);
+    margin-right: rem(15px);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  p {
+    color: #00e0d0;
+    font: 400 rem(30px)/1 "Roboto";
+  }
+}
+
+.header_nav {
+  position: relative;
+  ul {
+    display: flex;
+    li {
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: rem(0.33px);
+      font: 900 rem(15px)/1 "Roboto";
+      transition: .3s;
+      margin-right: rem(20px);
+      &:last-child {
+        margin-right: 0;
+      }
+      &:hover {
+        color: $blue-color;
+      }
+    }
+  }
+}

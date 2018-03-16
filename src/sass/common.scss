@@ -1,0 +1,53 @@
+.container {
+  max-width: rem(960px);
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+body {
+  font: 300 rem(14px)/1 "Roboto";
+  color: #ffffff;
+}
+
+.btn {
+  width: rem(120px);
+  height: rem(40px);
+  border: rem(1px) solid $blue-color;
+  text-transform: uppercase;
+  font: 400 rem(16px)/1 "Hammersmith One";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $blue-color;
+  transition: .3s;
+  &:hover {
+    background-color: $blue-color;
+    color: #ffffff;
+  }
+}
+
+.expertize_title {
+  color: #413d4b;
+  letter-spacing: rem(1.1px);
+  font: 700 rem(22px)/1 "Playfair Display";
+  margin-bottom: rem(15px);
+  text-align: center;
+}
+
+.title_item {
+  color: #2f2d35;
+  letter-spacing: rem(1.05px);
+  font: 400 rem(15px)/1 "Playfair Display";
+  text-align: center;
+  opacity: 0.75;
+  position: relative;
+  margin-bottom: rem(65px);
+  &::before {
+    @include before_fig(rem(50px), rem(2px), #413d4b);
+    opacity: 0.3;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: rem(-20px);
+  }
+}
