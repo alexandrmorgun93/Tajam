@@ -55,3 +55,42 @@
     }
   }
 }
+
+.btn_menu {
+  display: none;
+  flex-direction: column;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  cursor: pointer;
+  li {
+    border-radius: rem(2px);
+    width: rem(34px);
+    height: 3px;
+    transition: background-color .4s, transform .4s, -webkit-transform .4s;
+    background-color: #fff;
+    &:nth-child(2) {
+      margin: rem(8px) 0;
+    }
+  }
+
+  &.active {
+    z-index: 110;
+    li {
+      background-color: $blue-color;
+      &:first-child {
+        -webkit-transform: rotate(-220deg) translate(10px, -9px);
+        transform: rotate(-220deg) translate(10px, -9px);
+      }
+      &:nth-child(2) {
+        opacity: 0;
+      }
+      &:last-child {
+        -webkit-transform: rotate(219deg) translate(6px, 6px);;
+        transform: rotate(219deg) translate(6px, 6px);;
+
+      }
+    }
+  }
+}

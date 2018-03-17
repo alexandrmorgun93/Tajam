@@ -12,7 +12,7 @@
   }
 
   .container {
-    padding: rem(60px) 0;
+    padding: rem(60px) rem(10px);
     z-index: 3;
   }
 }
@@ -20,6 +20,7 @@
 .footer_info {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
   width: 100%;
   margin-bottom: rem(60px);
 }
@@ -30,7 +31,6 @@
   flex-direction: column;
   max-width: rem(285px);
   width: 100%;
-  margin-right: rem(45px);
   .logo {
     margin-bottom: rem(25px);
   }
@@ -45,7 +45,6 @@
   flex-direction: column;
   max-width: rem(280px);
   width: 100%;
-  margin-right: rem(60px);
   h2 {
     color: #ffffff;
     text-transform: uppercase;

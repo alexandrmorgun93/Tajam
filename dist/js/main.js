@@ -92,7 +92,13 @@ module.exports = __webpack_require__(4);
     let playBtn = document.querySelector('.play_video');
     let stopBtn = document.querySelector('.stop_video');
     let videoFade = document.querySelectorAll('.video_fade');
+    let btnMenu = document.querySelector('.btn_menu');
+    let header_nav = document.querySelector('.header_nav');
 
+    btnMenu.addEventListener('click', () => {
+        btnMenu.classList.toggle('active');
+        header_nav.classList.toggle('active');
+    });
 
     playBtn.addEventListener('click', () => {
         play();
